@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дорожная карта проекта "ЕдаДляМеня"</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .month {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .focus {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .backend, .frontend {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        .backend h3, .frontend h3 {
+            margin: 0;
+            color: #495057;
+        }
+        .list {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .list div {
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px dashed #ccc;
+            border-radius: 3px;
+            background: #fff;
+            cursor: text;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Дорожная карта проекта "ЕдаДляМеня" (12 месяцев с сентября 2024)</h1>
+
+<div class="month">
+    <h2 contenteditable="true">Сентябрь 2024</h2>
+    <div class="focus" contenteditable="true">Фокус: Разработка базового функционала администратора.</div>
+    <div class="backend">
+        <h3 contenteditable="true">Бэкенд:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>API для CRUD операций с ресторанами.</div>
+            <div>API для получения статистики о средних чеках.</div>
+            <div>API для управления пользователями.</div>
+        </div>
+    </div>
+    <div class="frontend">
+        <h3 contenteditable="true">Фронтенд:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Интерфейс администратора для авторизации и управления ресторанами.</div>
+            <div>Отображение карты с маркерами ресторанов.</div>
+            <div>Форма для добавления/редактирования информации о ресторане.</div>
+            <div>Базовая статистика по средним чекам.</div>
+        </div>
+    </div>
+</div>
+
+<div class="month">
+    <h2 contenteditable="true">Октябрь 2024</h2>
+    <div class="focus" contenteditable="true">Фокус: Разработка базового функционала пользователя.</div>
+    <div class="backend">
+        <h3 contenteditable="true">Бэкенд:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>API для получения списка ресторанов с фильтрацией.</div>
+            <div>API для получения детальной информации о ресторане.</div>
+            <div>API для изменения среднего чека ресторана.</div>
+            <div>API для добавления новых ресторанов пользователем.</div>
+        </div>
+    </div>
+    <div class="frontend">
+        <h3 contenteditable="true">Фронтенд:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Интерфейс пользователя для просмотра карты с ресторанами.</div>
+            <div>Страница с детальной информацией о ресторане.</div>
+            <div>Форма для изменения среднего чека.</div>
+            <div>Форма для добавления нового ресторана.</div>
+            <div>Интеграция с сервисом прокладки маршрутов.</div>
+        </div>
+    </div>
+</div>
+
+<div class="month">
+    <h2 contenteditable="true">Ноябрь 2024</h2>
+    <div class="focus" contenteditable="true">Фокус: Разработка функционала подписки и расширенной фильтрации.</div>
+    <div class="backend">
+        <h3 contenteditable="true">Бэкенд:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Реализация системы подписки (уровни подписки, цены, функционал).</div>
+            <div>API для обработки оплаты подписки.</div>
+            <div>API для получения расширенных данных о ресторанах.</div>
+        </div>
+    </div>
+    <div class="frontend">
+        <h3 contenteditable="true">Фронтенд:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Страница с описанием уровней подписки.</div>
+            <div>Расширенный фильтр для поиска ресторанов.</div>
+            <div>Визуальное отображение информации о подписке пользователя.</div>
+        </div>
+    </div>
+</div>
+
+<div class="month">
+    <h2 contenteditable="true">Декабрь 2024</h2>
+    <div class="focus" contenteditable="true">Фокус: Тестирование и отладка функционала администратора.</div>
+    <div class="backend">
+        <h3 contenteditable="true">Тестирование:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Функциональное тестирование API и интерфейса администратора.</div>
+            <div>Тестирование CRUD операций с ресторанами.</div>
+            <div>Тестирование получения статистики.</div>
+            <div>Тестирование управления пользователями.</div>
+        </div>
+    </div>
+    <div class="frontend">
+        <h3 contenteditable="true">Исправление ошибок:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Исправление выявленных ошибок и уязвимостей.</div>
+        </div>
+    </div>
+</div>
+
+<div class="month">
+    <h2 contenteditable="true">Январь 2025</h2>
+    <div class="focus" contenteditable="true">Фокус: Тестирование и отладка функционала пользователя.</div>
+    <div class="backend">
+        <h3 contenteditable="true">Тестирование:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Функциональное тестирование API и интерфейса пользователя.</div>
+            <div>Тестирование поиска и фильтрации ресторанов.</div>
+            <div>Тестирование просмотра детальной информации о ресторанах.</div>
+            <div>Тестирование изменения среднего чека.</div>
+            <div>Тестирование добавления новых ресторанов.</div>
+        </div>
+    </div>
+    <div class="frontend">
+        <h3 contenteditable="true">Исправление ошибок:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Исправление выявленных ошибок и уязвимостей.</div>
+        </div>
+    </div>
+</div>
+
+<div class="month">
+    <h2 contenteditable="true">Февраль 2025</h2>
+    <div class="focus" contenteditable="true">Фокус: Тестирование и отладка системы подписки.</div>
+    <div class="backend">
+        <h3 contenteditable="true">Тестирование:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Функциональное тестирование системы подписки.</div>
+            <div>Тестирование процесса оплаты.</div>
+            <div>Тестирование дополнительного функционала для подписчиков.</div>
+        </div>
+    </div>
+    <div class="frontend">
+        <h3 contenteditable="true">Исправление ошибок:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Исправление выявленных ошибок и уязвимостей.</div>
+        </div>
+    </div>
+</div>
+
+<div class="month">
+    <h2 contenteditable="true">Март 2025</h2>
+    <div class="focus" contenteditable="true">Фокус: Подготовка к запуску и запуск приложения.</div>
+    <div class="backend">
+        <h3 contenteditable="true">Подготовка к запуску:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Создание аккаунтов разработчика в магазинах приложений.</div>
+            <div>Подготовка скриншотов и описания приложения.</div>
+            <div>Разработка маркетинговых материалов.</div>
+        </div>
+    </div>
+    <div class="frontend">
+        <h3 contenteditable="true">Запуск:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Публикация приложения в Google Play и App Store.</div>
+            <div>Запуск рекламной кампании.</div>
+        </div>
+    </div>
+</div>
+
+<div class="month">
+    <h2 contenteditable="true">Апрель 2025</h2>
+    <div class="focus" contenteditable="true">Фокус: Сбор отзывов пользователей и анализ использования приложения.</div>
+    <div class="backend">
+        <h3 contenteditable="true">Мониторинг:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Отслеживание количества скачиваний и активных пользователей.</div>
+            <div>Сбор отзывов пользователей через магазины приложений.</div>
+        </div>
+    </div>
+    <div class="frontend">
+        <h3 contenteditable="true">Анализ:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Анализ данных об использовании приложения.</div>
+        </div>
+    </div>
+</div>
+
+<div class="month">
+    <h2 contenteditable="true">Май 2025</h2>
+    <div class="focus" contenteditable="true">Фокус: Исправление ошибок и внедрение небольших улучшений на основе отзывов пользователей.</div>
+    <div class="backend">
+        <h3 contenteditable="true">Разработка:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Исправление ошибок, выявленных пользователями.</div>
+            <div>Внедрение небольших улучшений интерфейса и функционала.</div>
+        </div>
+    </div>
+</div>
+
+<div class="month">
+    <h2 contenteditable="true">Июнь - Август 2025</h2>
+    <div class="focus" contenteditable="true">Фокус: Разработка и внедрение нового функционала.</div>
+    <div class="backend">
+        <h3 contenteditable="true">Разработка:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Реализация новых функций для улучшения пользовательского опыта.</div>
+        </div>
+    </div>
+    <div class="frontend">
+        <h3 contenteditable="true">Тестирование:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Функциональное тестирование нового функционала.</div>
+        </div>
+    </div>
+</div>
+
+<div class="month">
+    <h2 contenteditable="true">Сентябрь 2025</h2>
+    <div class="focus" contenteditable="true">Фокус: Анализ результатов первого года работы приложения и планирование дальнейшего развития.</div>
+    <div class="backend">
+        <h3 contenteditable="true">Анализ:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Оценка эффективности маркетинговой кампании.</div>
+            <div>Анализ показателей прибыльности.</div>
+            <div>Оценка удовлетворенности пользователей.</div>
+        </div>
+    </div>
+    <div class="frontend">
+        <h3 contenteditable="true">Планирование:</h3>
+        <div class="list" contenteditable="true" onkeypress="addListItem(event, this)">
+            <div>Определение направлений дальнейшего развития приложения.</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addListItem(event, element) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Предотвращаем стандартное поведение Enter
+            const newItem = document.createElement('div');
+            newItem.contentEditable = 'true';
+            newItem.innerText = ''; // Текст по умолчанию
+            element.appendChild(newItem);
+            newItem.focus(); // Устанавливаем фокус на новый элемент
+        }
+    }
+</script>
+
+</body>
+</html>
